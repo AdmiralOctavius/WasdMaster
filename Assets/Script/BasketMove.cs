@@ -12,6 +12,19 @@ public class BasketMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		gameObject.transform.
-	}
+        //gameObject.transform.
+
+        //Debug.Log(gameObject.transform.position.x + " " + gameObject.transform.position.y);
+        //Invalid gameObject.transform.position.x + 10;
+        
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            gameObject.transform.position += new Vector3(0.1f, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            gameObject.transform.position += new Vector3(-  0.1f, 0, 0);
+        }
+    }
 }
