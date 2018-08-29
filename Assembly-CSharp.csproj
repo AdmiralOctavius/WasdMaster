@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AppleSpawner.cs" />
      <Compile Include="Assets\Script\Basket.cs" />
      <Compile Include="Assets\Script\BasketMove.cs" />
  <Reference Include="UnityEditor.StandardEvents">

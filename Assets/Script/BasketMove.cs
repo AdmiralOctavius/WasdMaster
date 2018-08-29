@@ -22,9 +22,17 @@ public class BasketMove : MonoBehaviour {
         {
             gameObject.transform.position += new Vector3(0.1f, 0, 0);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.position += new Vector3(-  0.1f, 0, 0);
+            gameObject.transform.position += new Vector3(-0.1f, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            gameObject.transform.position += new Vector3(0, 0.1f, 0);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            gameObject.transform.position += new Vector3(0, -0.1f, 0);
         }
     }
 }
