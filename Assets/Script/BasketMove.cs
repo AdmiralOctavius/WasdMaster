@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BasketMove : MonoBehaviour {
 
+    public float speed = 0.1f;
 	// Use this for initialization
 	void Start () {
         Debug.Log("Hello World!");
@@ -18,21 +19,21 @@ public class BasketMove : MonoBehaviour {
         //Invalid gameObject.transform.position.x + 10;
         
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && gameObject.transform.position.x < 9)
         {
-            gameObject.transform.position += new Vector3(0.1f, 0, 0);
+            gameObject.transform.position += new Vector3(speed, 0, 0);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.position += new Vector3(-0.1f, 0, 0);
+            gameObject.transform.position += new Vector3(-speed, 0, 0);
         }
         if (Input.GetKey(KeyCode.W))
         {
-            gameObject.transform.position += new Vector3(0, 0.1f, 0);
+            gameObject.transform.position += new Vector3(0, speed, 0);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            gameObject.transform.position += new Vector3(0, -0.1f, 0);
+            gameObject.transform.position += new Vector3(0, -speed, 0);
         }
     }
 }

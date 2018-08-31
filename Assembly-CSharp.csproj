@@ -53,9 +53,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AppleSpawner.cs" />
+     <Compile Include="Assets\Script\AppleSpawner.cs" />
      <Compile Include="Assets\Script\Basket.cs" />
+     <Compile Include="Assets\Script\BasketCollect.cs" />
      <Compile Include="Assets\Script\BasketMove.cs" />
+     <Compile Include="Assets\Script\CollisionExampleScript.cs" />
+     <Compile Include="Assets\Script\DeathBox.cs" />
+     <Compile Include="Assets\Script\PlayerScore.cs" />
+     <Compile Include="Assets\Script\ScoreZone.cs" />
+     <Compile Include="Assets\UIScoreUp.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/bennett253/Documents/UnityClass/WasdMaster/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
