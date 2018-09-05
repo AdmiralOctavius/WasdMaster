@@ -12,7 +12,9 @@ public class BasketMove : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+    //Fixed update is called every physics engine tick
+
+	void FixedUpdate () {
         //gameObject.transform.
 
         //Debug.Log(gameObject.transform.position.x + " " + gameObject.transform.position.y);

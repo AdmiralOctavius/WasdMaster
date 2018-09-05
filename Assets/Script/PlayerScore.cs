@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerScore : MonoBehaviour {
 
-    private int score;
+    public int score;
 	// Use this for initialization
 	void Start () {
 		
@@ -20,4 +20,6 @@ public class PlayerScore : MonoBehaviour {
         score += Points;
         Debug.Log("Score: " + score);
     }
+
+    
 }
